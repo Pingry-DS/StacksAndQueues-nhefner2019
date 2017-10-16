@@ -1,4 +1,4 @@
-public class LinkedStack extends Linked implements Stack
+public class LinkedStack<E> extends Linked<E> implements Stack<E>
 {
 	public boolean push(E e)
 	{
@@ -19,7 +19,7 @@ public class LinkedStack extends Linked implements Stack
 	
 	public int size()
 	{
-		return listSize;
+		return super.size();
 	}
 	
 	public E peek()

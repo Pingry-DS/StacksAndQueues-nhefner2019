@@ -1,12 +1,13 @@
-public class LinkedQueue extends Linked implements Queue
+public class LinkedQueue<E> extends Linked<E> implements Queue<E>
 {
-	public boolean add(E e)
+
+	public boolean offer(E e)
 	{
 		add(e);
 		return true;
 	}
 	
-	public E remove()
+	public E poll()
 	{
 		return remove(0);
 		
@@ -19,7 +20,7 @@ public class LinkedQueue extends Linked implements Queue
 	
 	public int size()
 	{
-		return linkSize;
+		return super.size();
 	}
 	
 	public E peek()

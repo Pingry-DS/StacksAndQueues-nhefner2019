@@ -1,4 +1,4 @@
-public class vectorStack extends Vector implements Stack
+public class vectorStack<E> extends Vector<E> implements Stack<E>
 {
 	
 	public boolean push(E e)
@@ -20,7 +20,7 @@ public class vectorStack extends Vector implements Stack
 	
 	public int size()
 	{
-		return listSize;
+		return super.size();
 	}
 	
 	public E peek()
